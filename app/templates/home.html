@@ -1,0 +1,38 @@
+<div class="container">
+    <section class="header">
+        <h1 class="name">bloc-chat</h1>
+        <h4 class="tagline">Who wouldn't like to meet people in a 90's style chatroom?</h4>
+    </section>
+
+    <section class="sidebar">
+      <div id="rooms">
+        <!--add new rooms-->
+            <button class="new-room-button" type="button" ng-click="home.addRoom()"> New Room </button>
+            <div  ng-click = "home.setCurrentRoom(room)" ng-repeat = "room in home.rooms track by $index"> {{room.name}} </div>
+      </div>
+
+  <!--current room buttons and message information-->
+
+        <div class="current-room">
+            <h3 class="current-room-name">{{ home.currentRoom.name }}</h3>
+            <div class="message-list" ng-repeat="message in home.messages">
+            <div class="message-username">{{ message.username }}</div>
+            <div class="message-timestamp">{{message.sentAt|date:'MM-dd-yyyy HH:mm:ss'}}</div>
+            <div class="message-text">{{ message.text }}</div>
+            </div>
+        </div>
+
+<!--messages section-->
+        <div class="message-input" ng-show="home.setCurrentRoom">
+          <div class="message-interface">
+              <label>Say something!</label>
+              <input class="message-box" placeholder="Type message here" type="text" ng-model="message.text">
+              <button class="send-button" ng-click="home.sendMessage(message)" type="submit">Send</button>
+          </div>
+        </div>
+    </section>
+
+
+  <!--footer-->
+    <section class="footer"> </section>
+</div>

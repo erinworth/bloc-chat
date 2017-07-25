@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+	background-color: white;
+	background-size: cover;
+	font-family: 'Indie Flower', cursive;
+	min-height: 100%;
+}
+
+.css-selector {
+  font-family: 'Indie Flower', cursive;
+}
+
+.name {
+	color: orchid;
+  font-size: 35px;
+}
+.send-button{
+	color: orchid;
+}
+
+.header {
+  padding-left: 25px;
+	border-bottom: 5px solid midnightblue;
+}
+
+.tagline {
+  color: rgb(32, 219, 234);
+  font-size: 20px;
+}
+
+
+.sidebar {
+  width: 20%;
+	height: 100vh;
+	margin: 0;
+	padding-left: 2rem;
+	padding-top: 1rem;
+  background-color: rgb(202, 207, 210);
+  display: inline-block;
+}
+
+.rooms{
+	float:left;
+}
+
+.messages{
+	float:left;
+}
+
+.chat-room-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.new-room-button {
+	color: orchid;
+}
+
+.messages-button{
+	color: orchid;
+}
+
+.{{room.name}}:hover{
+	cursor: pointer;
+}
+
+.footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:15px;
+   width:100%;
+   background-color: midnightblue;
+}
