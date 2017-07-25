@@ -15,10 +15,10 @@
 
         <div class="current-room">
             <h3 class="current-room-name">{{ home.currentRoom.name }}</h3>
-            <div class="message-list" ng-repeat="message in home.messages">
-            <div class="message-username">{{ message.username }}</div>
-            <div class="message-timestamp">{{message.sentAt|date:'MM-dd-yyyy HH:mm:ss'}}</div>
-            <div class="message-text">{{ message.text }}</div>
+            <div class="messages" ng-repeat="message in home.messages">
+            <div class="username">{{ message.username }}</div>
+            <div class="user-message"> {{message.content}} </div>
+            <div class="timestamp"> {{message.sentAt | timeOfDay}} </div>
             </div>
         </div>
 
