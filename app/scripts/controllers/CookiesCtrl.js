@@ -1,5 +1,5 @@
 (function() {
-  function BlocChatCookies($cookies) {
+  function BlocChatCookies($cookies, $uibModal) {
     var currentUser = $cookies.get('blocChatCurrentUser');
     if (!currentUser || currentUser === '') {
       // Do something to allow users to set their username
@@ -16,5 +16,5 @@
 
   angular
     .module('blocChat')
-    .run(['$cookies', BlocChatCookies]);
+    .run(['$cookies', '$uibModal', BlocChatCookies]);
 })();
