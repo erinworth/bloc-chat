@@ -65,6 +65,10 @@ body {
 	cursor: pointer;
 }
 
+.btn-new{
+	color: orchid;
+}
+
 .footer {
    position:fixed;
    left:0px;

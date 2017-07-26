@@ -1,6 +1,6 @@
 (function(){
     function UserCtrl($cookies, $uibModalInstance){
-      var UserCtrl = this;
+      var userCtrl = this;
 
       this.createUsername = function(){
           if(this.username){
