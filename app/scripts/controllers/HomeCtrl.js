@@ -11,19 +11,18 @@
                 size: 'sm',
                 controller: 'ModalCtrl as modal'
             });
-        }
+        };
 
         this.setCurrentRoom=function(room){
           this.currentRoom=room;
           this.messages=Message.getByRoomId(this.currentRoom.$id);
-        }
+        };
 
-        this.sendMessage=function(){
-          var currentTime="12:00pm";
+        this.sendMessage=function(newMessage){
           console.log();
-          Message.send(this.message, this.currentRoomID, this.currentUser);
-          this.message="";
-        }
+          Message.send(newMessage, this.currentRoomID, this.currentUser);
+          $scope.newMessage = "";
+        };
     }
 
     angular
