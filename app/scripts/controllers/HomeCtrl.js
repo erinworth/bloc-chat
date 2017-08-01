@@ -1,3 +1,4 @@
+
 (function() {
     function HomeCtrl(Room, Message, $uibModal, $cookies, $scope) {
       this.rooms=Room.all;

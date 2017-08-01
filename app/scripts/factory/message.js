@@ -1,4 +1,3 @@
-
 (function() {
   function Message($firebaseArray) {
     var Message={};
@@ -11,14 +10,15 @@
         return $firebaseArray(ref.orderByChild("roomId").equalTo(roomId));
     };
 
-    Message.send = function(newMessage, currentTime, userName, roomId) {
+    Message.send = function(newMessage, roomId, userName, currentTime) {
 
         var messages = $firebaseArray(ref);
+        console.log(roomId);
         messages.$add({
             content: newMessage,
-            sentAt: currentTime,
-            username: userName,
             roomID: roomId,
+            username: userName,
+            sentAt: currentTime,
         });
     };
 
