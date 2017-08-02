@@ -10,9 +10,9 @@
             <button class="new-room-button" type="button" ng-click="home.addRoom()"> New Room </button>
             <div  ng-click = "home.setCurrentRoom(room)" ng-repeat = "room in home.rooms track by $index"> {{room.name}} </div>
       </div>
-
+    </section>
   <!--current room buttons and message information-->
-
+    <section class="center">
         <div class="current-room">
             <h3 class="current-room-name">{{ home.currentRoom.name }}</h3>
             <div class="messages" ng-repeat="message in home.messages">
@@ -31,7 +31,6 @@
           </div>
         </div>
     </section>
-
   <!--footer-->
     <section class="footer"> </section>
 </div>
