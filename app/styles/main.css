@@ -45,7 +45,7 @@
 
 
 .rooms{
-	float:left;	
+	float:left;
 }
 
 /*Chatrooms & Messages*/
@@ -53,8 +53,8 @@
 .center{
 	float: right;
 	margin: auto;
-	width: 50%;
-	border: 3px solid orchid;
+	width: 83%;
+	border: 5px solid orchid;
 	padding: 10px;
 }
 
