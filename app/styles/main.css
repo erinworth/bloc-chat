@@ -45,7 +45,7 @@
 
 
 .rooms{
-	float:left;
+	float:left;	
 }
 
 /*Chatrooms & Messages*/
@@ -60,10 +60,6 @@
 
 .send-button{
 	color: orchid;
-}
-
-.messages{
-	display: flex;
 }
 
 .chat-room-list {

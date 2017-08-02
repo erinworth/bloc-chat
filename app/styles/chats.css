@@ -1,0 +1,24 @@
+/*Chat room messages syling*/
+
+.messages .username {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.messages .timestamp {
+  font-style: italic;
+  padding-left: 20px;
+}
+
+.messages .user-message {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.new-message {
+  height: 10vh;
+  width: 90vw;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1;
+}
