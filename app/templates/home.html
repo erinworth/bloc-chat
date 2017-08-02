@@ -16,9 +16,9 @@
         <div class="current-room">
             <h3 class="current-room-name">{{ home.currentRoom.name }}</h3>
             <div class="messages" ng-repeat="message in home.messages">
-            <div class="username">{{ message.username }}</div>
-            <div class="user-message"> {{message.content}} </div>
-            <div class="timestamp"> {{message.sentAt | timeOfDay}} </div>
+              <div class="username">{{ message.username }}</div>
+              <div class="user-message"> {{message.content}} </div>
+              <div class="timestamp"> {{message.sentAt}} </div>
             </div>
         </div>
 
@@ -26,12 +26,11 @@
         <div class="message-input" ng-show="home.setCurrentRoom">
           <div class="message-interface">
               <label>Say something!</label>
-              <input class="message-input" placeholder="Type message here" type="text" ng-model="message.text">
-              <button class="send-button" ng-click="home.sendMessage(message)" type="submit">Send</button>
+              <input class="message-input" placeholder="Type message here" type="text" ng-model="home.newMessage"></input>
+              <button class="send-button" ng-click="home.sendMessage(home.newMessage)" type="submit">Send</button>
           </div>
         </div>
     </section>
-
 
   <!--footer-->
     <section class="footer"> </section>
